@@ -16,7 +16,7 @@ HTML, CSS, JavaScript
 
 ## 學習成果
 
-- 學習使用 JS 來新增/刪除 elements，並將資料儲存在 LocalStorage，在 DOMContentLoaded 時加載成績資料。
+- 學習使用 JS 來新增/刪除 elements，並將資料儲存在 LocalStorage，在 DOMContentLoaded 時加載成績資料
 - 學習使用 sweetalert2 讓 alert 的畫面更有質感與人性化
 - 學習使用 GSAP 的動畫製作方式（TimelineMax()），讓動畫製作更快速直觀
 - 學習用 MergeSort 的概念且用其排序成績
