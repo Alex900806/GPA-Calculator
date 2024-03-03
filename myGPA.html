@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <meta name="author" content="Lexie" />
+    <title>GPA 計算網站</title>
+    <!-- cdn.js font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/pulsar-color/48/grades.png"
+    />
+    <link
+      rel="bookmark"
+      href="https://img.icons8.com/pulsar-color/48/grades.png"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="myGPA.html">我的成績</a></li>
+          <li><a href="guide.html">使用指南</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 主要功能 -->
+    <main>
+      <section class="main-part">
+        <h1>我的GPA成績</h1>
+
+        <div class="buttons">
+          <button class="btn sortDescending">由高到低</button>
+          <button class="btn sortAscending">由低到高</button>
+        </div>
+
+        <!-- 成績輸入表格 -->
+        <div class="all-inputs"></div>
+
+        <div class="application_button">
+          <!-- 新增表格按鈕 -->
+          <button type="button" class="plus-button">
+            <i class="fas fa-plus-square"></i>
+          </button>
+
+          <!-- 儲存表格按鈕 -->
+          <button type="button" class="save-button">
+            <i class="fa-solid fa-floppy-disk"></i>
+          </button>
+        </div>
+
+        <!-- GPA 結果 -->
+        <div class="result">
+          <p id="gpa-text">
+            計算後的<br />
+            GPA 是
+          </p>
+          <h2 id="result-gpa">0.00</h2>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/load.js"></script>
+    <script src="./js/save.js"></script>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+// sort button
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  margin: 1rem 0.5rem;
+  font-size: 1.05rem;
+  border-radius: 5%;
+  transition: all 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    background-color: #7b84cc;
+    transform: scale(1.1);
+  }
+}
+
+// navbar
+header {
+  nav {
+    box-shadow: 0 8px 6px -6px black;
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        padding: 1rem;
+        a {
+          color: whitesmoke;
+          font-size: 1.15rem;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          &:hover {
+            color: #7b84cc;
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  background-color: #272727;
+  color: whitesmoke;
+  section.animation-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    section.animation {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div.hero {
+        width: 100%;
+        height: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    div.slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(to top, rgb(36, 52, 84), rgb(54, 52, 101));
+      z-index: -1;
+    }
+  }
+
+  main {
+    section.main-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      h1 {
+        font-size: 3rem;
+        margin: 1.5rem 0rem 1rem 0rem;
+        letter-spacing: 2rem;
+        background: linear-gradient(90deg, #8992a9, #7b84cc);
+        background-clip: text;
+        color: transparent;
+        animation: fade_in 3s ease-in-out;
+        // animation-name: title_color;
+        // animation-duration: 30s;
+        // animation-iteration-count: infinite;
+      }
+      div.all-inputs {
+        form {
+          input,
+          select {
+            font-size: 1.05rem;
+            padding: 0.5rem;
+            border: 0.25px solid rgb(39, 39, 21);
+            margin: 0.35rem;
+            border-radius: 0.25rem;
+          }
+          .class-semester {
+            width: 17%;
+          }
+          .class-title {
+            width: 35%;
+          }
+          .class-credit {
+            width: 15%;
+          }
+          .select-grade {
+            width: 18%;
+          }
+          button.trash-button {
+            border: none;
+            margin-left: 0.4rem;
+            background-color: #272727;
+            cursor: pointer;
+            i {
+              font-size: 1.55rem;
+              pointer-events: none;
+              color: white;
+              transition: all 0.5s ease;
+              &:hover {
+                color: rgb(209, 56, 56);
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
+
+      div.application_button {
+        button.plus-button {
+          background-color: #272727;
+          border: none;
+          width: 2.5rem;
+          margin: 3rem 1.2em;
+          cursor: pointer;
+          i {
+            font-size: 2.5rem;
+            color: white;
+            transition: all 0.5s ease;
+            &:hover {
+              color: rgb(104, 100, 175);
+              transform: scale(1.1);
+            }
+          }
+        }
+        button.save-button {
+          background-color: #272727;
+          border: none;
+          width: 2.5rem;
+          margin: 3rem 1.2rem;
+          cursor: pointer;
+          i {
+            font-size: 2.5rem;
+            color: white;
+            transition: all 0.5s ease;
+            &:hover {
+              color: rgb(104, 100, 175);
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      div.result {
+        width: 200px;
+        height: 200px;
+        border: 3px solid #1e465f;
+        border-radius: 50%;
+        text-align: center;
+        animation-name: border_color;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        p {
+          font-size: 1.2rem;
+          margin-top: 15px;
+        }
+        h2#result-gpa {
+          font-size: 3.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.remove {
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes border_color {
+  0% {
+    border-color: #8992a9;
+  }
+  33% {
+    border-color: #7667ea;
+  }
+  66% {
+    border-color: #a49f88;
+  }
+}
+
+@keyframes title_color {
+  0% {
+    background: linear-gradient(90deg, #8992a9, #7b84cc);
+    background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(90deg, #25669b, #553ad6);
+    background-clip: text;
+    color: transparent;
+  }
+  90% {
+    background: linear-gradient(90deg, #267282, #1f8aa1);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

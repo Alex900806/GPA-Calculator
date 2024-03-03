@@ -1,0 +1,60 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  font-size: 3rem;
+  margin: 1.5rem 0rem 2rem 0rem;
+  letter-spacing: 2rem;
+  background: linear-gradient(90deg, #8992a9, #7b84cc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main div.main-part {
+  width: 70%;
+}
+main div.main-part ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+main div.main-part ul li span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #974c97;
+}
+main div.second-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div.second-part h2 {
+  font-size: 2.3em;
+  margin: 1.5rem 0rem 2rem 0rem;
+  letter-spacing: 2rem;
+  background: linear-gradient(90deg, #8992a9, #7b84cc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main div.second-part table {
+  width: 50rem;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+main div.second-part table tr th,
+main div.second-part table tr td {
+  font-size: 1.1rem;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #0a0808;
+  background-color: #ac9fd1;
+  color: #1d1c1c;
+}
+main div.second-part table tr th {
+  font-size: 1.25rem;
+  background-color: #9f7f9b;
+}/*# sourceMappingURL=guide.css.map */
