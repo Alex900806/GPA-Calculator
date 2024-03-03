@@ -23,4 +23,6 @@ HTML, CSS, JavaScript
 
 ## 實際頁面
 
-![image](https://github.com/Alex900806/Snake-Game/blob/main/demo_pictures/snake.jpg)
+![image](https://github.com/Alex900806/GPA-Calculator/blob/main/demo_pictures/gpa.jpg)
+![image](https://github.com/Alex900806/GPA-Calculator/blob/main/demo_pictures/gpa2.jpg)
+![image](https://github.com/Alex900806/GPA-Calculator/blob/main/demo_pictures/gpa3.jpg)
